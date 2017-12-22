@@ -35,7 +35,10 @@ This function is defined to visualize the input argument, which is a graph
 Function for finding weight of the shortest path from a source node to any given node in the graph
 -	dijkstra2(graph, sub_gr)
 Function for finding weight of the shortest path from closest node in sub group to each node in graph
+
 These functions are explained below. And also, we have to import modules to access these functions in the main code.
+
+
 The main TASK:
 
 Part-1: We parsed the data from the given json files, and organized them into a dictionary (publications - composed by publication_id (key) and list of author_ids (values)) and used this dictionary to add nodes for the graph. So, for each key – value of publications, we add a node with label author_id. When the list in value is more than 1, we connect the nodes using the function add_edge(). To find the weight of this edge, we used an user-defined function jaccard_distance(), which determines the weight for each edge connecting the authors that are passed as arguments. Once we calculate the Jaccard distance for 2 nodes, the weight of the edge connecting those two nodes is equal to (1-Jaccard_distance). After all the edges have been added, to visualize the graph, we defined another function plot_graph() , which uses draw_networkx_nodes(),draw_networkx_edges(), and show() functions to show the graph. 
