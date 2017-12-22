@@ -1,6 +1,7 @@
-README
 ADM HW-4 Group – 25
+
 Alessandra Griesi, Malik Bekmurat, Venakta Naga Sai Krishna Abhinay Pochiraju
+
 https://github.com/pvnskabhinay/ADM-HW4-Group-25
 
 The purpose of this homework is to extract information from the given json files. we are given two json files. full_DBLP (which contains the whole network) and reduced_DBLP(which is a reduced version of the full_DBLP). In the first part, we process the json and parse it. We create a graph G, whose nodes are authors. The nodes are connected if the authors have a common publication, and, the weight of the edges are calculated by Jaccard Similarity. Then, the second part is computing some statistics and visualizing them. And finally the third part is computing generalized version of the Erdös number.
